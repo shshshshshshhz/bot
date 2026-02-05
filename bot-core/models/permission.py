@@ -1,0 +1,5 @@
+"""
+permission.py
+"""
+
+# TODO: Implement

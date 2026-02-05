@@ -1,0 +1,332 @@
+{
+  "_comment": "English translations for Telegram Group Management Bot",
+  "_version": "1.0.0",
+  
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "on": "On",
+    "off": "Off",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "save": "Save",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "close": "Close",
+    "loading": "Loading...",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning"
+  },
+  
+  "auth": {
+    "unauthorized_install": "⛔️ Unauthorized installation. This bot was added to the group without permission.\n\n🔐 Please contact support to activate.",
+    "contact_support": "📞 Contact Support",
+    "group_not_approved": "❌ This group has not been approved yet.\n\nPlease wait for the system admin to activate the group.",
+    "leaving_group": "👋 Bot leaving group...",
+    "group_approved": "✅ Group successfully approved!\n\n🎉 Bot is now active and ready to use.",
+    "group_revoked": "🚫 Group access revoked.\n\nBot is no longer active in this group.",
+    "sudo_only": "⛔️ This command is only available for SUDO users.",
+    "owner_only": "⛔️ This command is only available for the group owner.",
+    "admin_only": "⛔️ This command is only available for admins.",
+    "permission_denied": "🚫 You don't have permission to perform this action.\n\nRequired permission: {permission}",
+    "vip_immunity": "💎 This user is VIP and has full immunity.\n\n⚠️ To perform this action, first remove VIP using /demvip command.",
+    "not_in_group": "❌ This command can only be used in groups."
+  },
+  
+  "sudo": {
+    "added": "✅ User added to SUDO list.\n\n👤 User: {user}\n🆔 ID: {user_id}",
+    "removed": "🗑 User removed from SUDO list.\n\n👤 User: {user}\n🆔 ID: {user_id}",
+    "list_title": "👥 SUDO Users List",
+    "list_empty": "📭 No SUDO users found.",
+    "already_sudo": "ℹ️ This user is already SUDO.",
+    "not_sudo": "ℹ️ This user is not SUDO."
+  },
+  
+  "owner": {
+    "set": "✅ Group owner set.\n\n👤 New owner: {user}\n🆔 ID: {user_id}",
+    "info": "👑 Current group owner:\n\n👤 Name: {user}\n🆔 ID: {user_id}\n📅 Since: {since}",
+    "no_owner": "ℹ️ This group has no owner.\n\nUse /setowner to set an owner."
+  },
+  
+  "roles": {
+    "promoted": "⬆️ Role promoted successfully!\n\n👤 User: {user}\n🎭 New role: {role}",
+    "demoted": "⬇️ Role demoted successfully!\n\n👤 User: {user}\n🎭 New role: Member",
+    "already_admin": "ℹ️ This user is already an admin.",
+    "not_admin": "ℹ️ This user is not an admin.",
+    "admin_list_title": "👥 Group Admins List",
+    "admin_list_empty": "📭 No admins found in group."
+  },
+  
+  "vip": {
+    "set": "💎 User promoted to VIP!\n\n👤 User: {user}\n🆔 ID: {user_id}\n\n✨ This user now has full immunity.",
+    "removed": "🗑 VIP removed from user.\n\n👤 User: {user}\n🆔 ID: {user_id}",
+    "list_title": "💎 VIP Users List",
+    "list_empty": "📭 No VIP users in group.",
+    "already_vip": "ℹ️ This user is already VIP.",
+    "not_vip": "ℹ️ This user is not VIP."
+  },
+  
+  "telegram_admin": {
+    "promote_panel_title": "👤 Promote Telegram Admin",
+    "promote_panel_desc": "⚙️ Select Telegram admin and bot permissions:",
+    "promote_success": "✅ User promoted successfully!\n\n👤 User: {user}\n📋 Telegram permissions: {telegram_perms}\n🤖 Bot permissions: {bot_perms}",
+    "demote_success": "✅ User demoted successfully!\n\n👤 User: {user}",
+    "telegram_permissions": "📋 Telegram Permissions:",
+    "bot_permissions": "🤖 Bot Permissions:",
+    "can_change_info": "Change group info",
+    "can_delete_messages": "Delete messages",
+    "can_invite_users": "Invite users",
+    "can_restrict_members": "Restrict members",
+    "can_pin_messages": "Pin messages",
+    "can_manage_video_chats": "Manage voice chats",
+    "can_promote_members": "Promote members",
+    "can_manage_topics": "Manage topics",
+    "is_anonymous": "Anonymous admin"
+  },
+  
+  "permissions": {
+    "apanel_title": "⚙️ Default Admin Permissions Template",
+    "apanel_desc": "This template applies to all newly promoted admins.",
+    "apanel_saved": "✅ Default template saved!",
+    "upanel_title": "👤 Personal Admin Permissions: {user}",
+    "upanel_desc": "Personal settings for this admin.",
+    "upanel_saved": "✅ Personal permissions saved!",
+    "upanel_reset": "↩️ Permissions reset to default.",
+    "bot_ban": "Ban users",
+    "bot_kick": "Kick users",
+    "bot_mute": "Mute users",
+    "bot_warn": "Warn users",
+    "bot_purge": "Bulk delete",
+    "bot_locks": "Content locks",
+    "bot_tag": "Tag users",
+    "bot_reports": "Reports",
+    "bot_logs_view": "View logs",
+    "bot_settings_limited": "Limited settings"
+  },
+  
+  "join_tracking": {
+    "enabled": "✅ Join tracking enabled.",
+    "disabled": "❌ Join tracking disabled.",
+    "who_added_title": "📊 User Join Information",
+    "join_method": "Join method",
+    "added_by": "Added by",
+    "invite_link": "Invite link",
+    "join_time": "Join time",
+    "method_invite_link": "Invite link",
+    "method_added_by_user": "Added by user",
+    "method_join_request": "Join request",
+    "method_unknown": "Unknown",
+    "invite_tree_title": "🌳 Invite Tree for {user}",
+    "invite_tree_desc": "Users added by {user}:",
+    "invited_users_count": "Invited users count: {count}",
+    "no_invited_users": "This user hasn't invited anyone.",
+    "link_list_title": "🔗 Invite Links List",
+    "link_tagged": "✅ Link tagged as «{tag}».",
+    "link_stats": "📊 Link stats {tag}:\n\n✅ Joins: {joins}\n❌ Leaves: {leaves}"
+  },
+  
+  "bio_scan": {
+    "enabled": "✅ Bio scan enabled.",
+    "disabled": "❌ Bio scan disabled.",
+    "action_set": "✅ Bio scan action set: {action}",
+    "report_title": "🚨 Bio Scan Report",
+    "detected_content": "Detected content",
+    "bio_contains_link": "Bio contains link",
+    "bio_contains_username": "Bio contains username",
+    "action_report": "Report",
+    "action_mute": "Mute",
+    "action_kick": "Kick",
+    "action_ban": "Ban"
+  },
+  
+  "account_age": {
+    "enabled": "✅ Account age check enabled.",
+    "disabled": "❌ Account age check disabled.",
+    "min_days_set": "✅ Minimum account age set: {days} days",
+    "action_set": "✅ Account age action set: {action}",
+    "suspicious_account": "⚠️ Suspicious Account",
+    "account_too_new": "This account is too new (less than {days} days)"
+  },
+  
+  "verification": {
+    "enabled": "✅ Verification gate enabled.",
+    "disabled": "❌ Verification gate disabled.",
+    "type_set": "✅ Verification type set: {type}",
+    "timeout_set": "✅ Verification timeout set: {seconds} seconds",
+    "attempts_set": "✅ Verification attempts set: {attempts}",
+    "fail_action_set": "✅ Fail action set: {action}",
+    "verify_message": "🔐 Please verify yourself.\n\nYour code: {code}\n⏱ Time remaining: {timeout} seconds",
+    "verify_success": "✅ Verification successful! Welcome! 🎉",
+    "verify_failed": "❌ Verification failed!\n\nReason: {reason}",
+    "type_code": "Code",
+    "type_button": "Button",
+    "type_captcha": "Captcha"
+  },
+  
+  "moderation": {
+    "banned": "🔨 User banned.\n\n👤 User: {user}\n👮 By: {by}\n📝 Reason: {reason}",
+    "unbanned": "✅ User unbanned.\n\n👤 User: {user}\n👮 By: {by}",
+    "kicked": "👢 User kicked.\n\n👤 User: {user}\n👮 By: {by}\n📝 Reason: {reason}",
+    "muted": "🔇 User muted.\n\n👤 User: {user}\n👮 By: {by}\n⏱ Duration: {duration}\n📝 Reason: {reason}",
+    "unmuted": "🔊 User unmuted.\n\n👤 User: {user}\n👮 By: {by}",
+    "warned": "⚠️ Warning issued!\n\n👤 User: {user}\n👮 By: {by}\n🔢 Warnings: {warns}/{max_warns}\n📝 Reason: {reason}",
+    "unwarned": "✅ Warning removed.\n\n👤 User: {user}\n👮 By: {by}\n🔢 Remaining warnings: {warns}/{max_warns}",
+    "warns_info": "⚠️ Warnings for {user}:\n\n🔢 Count: {warns}/{max_warns}\n📋 List:\n{list}",
+    "no_warns": "✅ This user has no warnings.",
+    "purged": "🗑 {count} messages deleted.",
+    "deleted": "✅ Message deleted.",
+    "pinned": "📌 Message pinned.",
+    "unpinned": "📌 Message unpinned.",
+    "lockdown_on": "🔒 Lockdown mode activated!\n\nOnly admins can send messages.",
+    "lockdown_off": "🔓 Lockdown mode deactivated.\n\nEveryone can send messages.",
+    "slowmode_set": "🐢 Slow mode set: {seconds} seconds",
+    "reason_placeholder": "No reason",
+    "duration_permanent": "Permanent",
+    "max_warns_reached": "⛔️ Max warnings reached!\n\nUser auto-banned."
+  },
+  
+  "locks": {
+    "enabled": "🔒 Lock {type} enabled.",
+    "disabled": "🔓 Lock {type} disabled.",
+    "links": "links",
+    "forward": "forwards",
+    "photo": "photos",
+    "video": "videos",
+    "gif": "GIFs",
+    "sticker": "stickers",
+    "voice": "voice messages",
+    "audio": "audio",
+    "document": "documents",
+    "location": "locations",
+    "contact": "contacts",
+    "poll": "polls",
+    "mention": "mentions",
+    "deleted_content": "🗑 Unauthorized content deleted.\n\nActive lock: {lock_type}"
+  },
+  
+  "filters": {
+    "blacklist_added": "✅ «{word}» added to blacklist.",
+    "blacklist_removed": "✅ «{word}» removed from blacklist.",
+    "whitelist_added": "✅ «{word}» added to whitelist.",
+    "whitelist_removed": "✅ «{word}» removed from whitelist.",
+    "punish_set": "✅ Punishment set: {type} → {action}",
+    "blacklist_triggered": "⚠️ Blacklisted word detected!\n\nPunishment: {action}"
+  },
+  
+  "reports": {
+    "daily_report_title": "📊 Daily Group Report",
+    "date": "📅 Date",
+    "active_admins": "👥 Active admins",
+    "active_users": "👤 Active users",
+    "total_messages": "💬 Total messages",
+    "new_joins": "➕ New joins",
+    "left_users": "➖ Left users",
+    "returned_users": "↩️ Returned users",
+    "suspicious_users": "⚠️ Suspicious users",
+    "top_chatters": "🗣 Top chatters",
+    "enabled": "✅ Daily reports enabled.",
+    "disabled": "❌ Daily reports disabled.",
+    "visibility_set": "✅ Report visibility set: {visibility}"
+  },
+  
+  "cleanup": {
+    "fakes_removed": "🗑 {count} fake/inactive accounts removed.",
+    "preview_title": "👁 Cleanup Preview",
+    "preview_desc": "These users will be removed:",
+    "confirm_cleanup": "⚠️ Are you sure?\n\n{count} users will be removed.",
+    "cleanup_executed": "✅ Cleanup executed!",
+    "no_users_to_clean": "ℹ️ No users found to clean.",
+    "inactive_days_set": "✅ Inactive days set: {days} days"
+  },
+  
+  "antibetra": {
+    "enabled": "✅ Anti-betrayal enabled.",
+    "disabled": "❌ Anti-betrayal disabled.",
+    "max_ban_set": "✅ Max ban count set: {count}",
+    "max_ban_time_set": "✅ Max ban time set: {minutes} minutes",
+    "limit_exceeded": "⚠️ Anti-betrayal warning!\n\n👮 Admin: {admin}\n🚨 Ban limit exceeded!\n📊 Bans performed: {count}/{max}\n⏱ Time window: {time} minutes"
+  },
+  
+  "tagging": {
+    "admins": "👥 Tag admins",
+    "active": "✅ Tag active users",
+    "inactive": "💤 Tag inactive users",
+    "new": "🆕 Tag new users",
+    "vip": "💎 Tag VIPs",
+    "all": "📢 Tag all",
+    "rate_limit": "⏱ Please wait a bit and try again."
+  },
+  
+  "panel": {
+    "main_title": "⚙️ Group Management Panel",
+    "main_desc": "Welcome to the management panel. Select a section:",
+    "security": "🔐 Security",
+    "roles": "👥 Roles & Admins",
+    "anti_spam": "🛡 Anti-Spam & Filters",
+    "verification": "✅ Verification & Gate",
+    "join_tracking": "📊 Join Tracking",
+    "cleanup": "🧹 Cleanup Tools",
+    "reports": "📈 Reports & Stats",
+    "logs": "📜 Logs",
+    "settings": "⚙️ Settings",
+    "locked": "🔒 Panel is locked.\n\nOnly the group owner can unlock.",
+    "unlocked": "🔓 Panel unlocked.\n\nAdmins can also access."
+  },
+  
+  "language": {
+    "changed": "✅ Group language changed: {language}",
+    "current": "Current language: {language}",
+    "fa": "Persian 🇮🇷",
+    "en": "English 🇬🇧"
+  },
+  
+  "logs": {
+    "title": "📜 Group Logs",
+    "empty": "📭 No logs found.",
+    "type_join": "Join",
+    "type_leave": "Leave",
+    "type_ban": "Ban",
+    "type_kick": "Kick",
+    "type_mute": "Mute",
+    "type_warn": "Warn",
+    "type_promote": "Promote",
+    "type_demote": "Demote",
+    "type_setvip": "Set VIP",
+    "type_setting": "Settings change",
+    "enabled": "✅ Logging enabled.",
+    "disabled": "❌ Logging disabled.",
+    "chat_set": "✅ Log chat set: {chat_id}"
+  },
+  
+  "errors": {
+    "unknown": "❌ An unknown error occurred. Please try again.",
+    "user_not_found": "❌ User not found.",
+    "group_not_found": "❌ Group not found.",
+    "invalid_input": "❌ Invalid input.",
+    "database_error": "❌ Database error. Please try again later.",
+    "rate_limit": "⏱ You're sending too many requests. Please wait.",
+    "reply_required": "❌ Please reply to a message.",
+    "target_is_bot": "❌ Cannot perform actions on bots.",
+    "target_is_self": "❌ You cannot perform this action on yourself.",
+    "no_permission": "🚫 You don't have permission to perform this action.",
+    "feature_disabled": "❌ This feature is disabled."
+  },
+  
+  "help": {
+    "main": "📖 Bot Help\n\nUse /commands to see the list of commands.\nUse /panel to open the management panel.",
+    "commands_title": "📝 Commands List",
+    "sudo_commands": "🔧 SUDO Commands",
+    "owner_commands": "👑 Owner Commands",
+    "admin_commands": "👮 Admin Commands",
+    "moderation": "⚖️ Moderation Commands",
+    "tracking": "📊 Tracking Commands",
+    "settings": "⚙️ Settings Commands"
+  }
+}
