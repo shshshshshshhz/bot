@@ -1,0 +1,76 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:6
+    container_name: telegram_bot_mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: telegram_group_bot
+    volumes:
+      - mongodb_data:/data/db
+      - ./database-migrations/backups:/backups
+    networks:
+      - bot_network
+
+  bot-core:
+    build:
+      context: ./bot-core
+      dockerfile: Dockerfile
+    container_name: telegram_bot_core
+    restart: unless-stopped
+    depends_on:
+      - mongodb
+    env_file:
+      - .env
+    volumes:
+      - ./bot-core:/app
+      - ./bot-modules:/bot-modules
+      - bot_logs:/app/logs
+    networks:
+      - bot_network
+
+  admin-api:
+    build:
+      context: ./admin-api
+      dockerfile: Dockerfile
+    container_name: telegram_bot_api
+    restart: unless-stopped
+    depends_on:
+      - mongodb
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./admin-api:/app
+    networks:
+      - bot_network
+
+  dashboard-web:
+    build:
+      context: ./dashboard-web
+      dockerfile: Dockerfile
+    container_name: telegram_bot_dashboard
+    restart: unless-stopped
+    depends_on:
+      - admin-api
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://admin-api:8000
+    volumes:
+      - ./dashboard-web:/app
+      - /app/node_modules
+    networks:
+      - bot_network
+
+volumes:
+  mongodb_data:
+  bot_logs:
+
+networks:
+  bot_network:
+    driver: bridge
